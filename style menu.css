@@ -1,0 +1,90 @@
+
+header {
+  background-color:rgb(88, 24, 24);
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header nav ul li {
+    display: inline;
+    margin: 0px 15px;
+  }
+  header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight: bold;
+  }
+  button {
+    background-color: rgba(0, 0, 0, 0.47);
+    font-family:'Roboto', sans-serif ;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.7em 1em;
+    text-align: center;
+    border: rgb(175, 195, 28);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    position: relative;
+    text-decoration:none;
+    font-weight: bold;
+    transition: 0.3em ease all;
+    cursor: pointer;
+  } 
+  button:hover{
+    background-color: rgba(246, 255, 0, 0.393);
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffffdc;
+  }
+ 
+  /* Menu Section */
+  #menu {
+    padding: 20px 50px;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  
+  .menu-category {
+    border: 1px solid #741b1b;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .menu-category:hover{
+    transform: scale(1.05);
+  }
+  
+  .menu-item {
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ec7e00;
+    margin-top: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+  }

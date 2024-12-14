@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 5px 5px;
+  }
+  header {
+    background-color:rgb(88, 24, 24);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button {
+    background-color: rgba(0, 0, 0, 0.47);
+    font-family:'Roboto', sans-serif ;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.7em 1em;
+    text-align: center;
+    border: rgb(175, 195, 28);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    position: relative;
+    text-decoration:none;
+    font-weight: bold;
+    transition: 0.3em ease all;
+    cursor: pointer;
+  } 
+  button:hover{
+    background-color: rgba(246, 255, 0, 0.393);
+  }
+  .hero {
+    background-image: url('home\ page\ .jpg');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    padding: 100px 10px;
+    text-align:center;
+  
+    font-size: larger;
+  }
+  .hero-content button {
+    font-size: 1.05em;
+  }
+  .hero-content{
+    margin: 250px;
+  }
+  .featured-dishes {
+    margin: 0;
+    text-align: center;
+    display: flex;
+  }.dish1{
+    margin: 30px 30px;
+    cursor: pointer;
+  }
+  .dish2{
+    margin: 30px 30px;
+    cursor: pointer;
+  }
+  .dish3{
+    margin: 30px 60px;
+    cursor: pointer;
+  }
+  .dish1:hover{
+    transform: scale(1.05);
+    
+  }
+  .dish2:hover{
+    transform: scale(1.05);
+  }
+  .dish3:hover{
+    transform: scale(1.05);
+  }
+  section {
+    padding: 50px 50px;
+    background-color: rgba(226, 149, 54, 0.726);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }

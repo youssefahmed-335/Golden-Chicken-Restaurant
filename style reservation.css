@@ -1,0 +1,91 @@
+* Reservation Section */
+#reservation {
+    padding: 30px 50px;
+    text-align: center;
+  }
+  header {
+    background-color:rgb(88, 24, 24);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header nav ul {
+    list-style:none;
+    padding: 0;
+  }
+  header nav ul li {
+    display: inline;
+    margin: 0px 15px;
+  }
+  header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight: bold;
+  }
+  button {
+    background-color: rgba(0, 0, 0, 0.47);
+    font-family:'Roboto', sans-serif ;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.7em 1em;
+    text-align: center;
+    border: rgb(175, 195, 28);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    position: relative;
+    text-decoration:none;
+    font-weight: bold;
+    transition: 0.3em ease all;
+    cursor: pointer;
+  } 
+  button:hover{
+    background-color: rgba(246, 255, 0, 0.393);
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #e07c73;
+  }
+  
+  /* Footer Section */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+  }

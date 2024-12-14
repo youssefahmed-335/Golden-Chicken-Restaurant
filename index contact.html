@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="style contact.css" />
+<body>
+    <header>
+        <div class="logo">
+            <h1>Golden Chicken</h1>
+          </div>
+          <nav>
+            <ul>
+              <button onclick="location.href='index main.html';">Home</button>
+              <button onclick="location.href='index reservation.html';">Reservation</button>
+              <button onclick="location.href='index aboutus.html';">About Us</button>
+              <button onclick="location.href='index contact.html';">Contact</button>
+            </ul>
+          </nav>
+    </header>    
+<!-- Contact Section -->
+ <main>
+    <section class="contact-section">
+      <div class="contact-form-container">
+        <form id="contact-form">
+          <h2>Get in Touch</h2>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="youremail@example.com" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Reservation, Feedback, Inquiry" required />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Our Contact Details</h3>
+        <p><strong>Address:</strong> 123 Chicken Lane, Food City, FC 12345</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Email:</strong> contact@goldenchicken.com</p>
+        <p><strong>Hours:</strong> Mon - Sat: 10:00 AM - 10:00 PM | Sun: 12:00 PM - 8:00 PM</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Golden Chicken Restaurant. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Handle form submission with JavaScript
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for contacting us! We will get back to you shortly.');
+      document.getElementById('contact-form').reset();
+    });
+  </script>
+</body>
+ <!-- JavaScript Section -->
+ <script>
+  // Handle the contact form submission
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && subject && message) {
+      // Simulate successful form submission
+      alert(
+        'Thank you, ${name}! Your message has been sent successfully.\n\nDetails:\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}'
+      );
+      // Reset the form
+      document.getElementById('contact-form').reset();
+    } else {
+      alert('Please fill out all the fields before submitting.');
+    }
+  });
+</script>
+
+</html>

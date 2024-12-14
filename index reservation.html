@@ -1,0 +1,56 @@
+<body>
+<header>
+    <div class="logo">
+        <h1>Golden Chicken</h1>
+      </div>
+      <nav>
+        <ul>
+          <button onclick="location.href='index main.html';">Home</button>
+          <button onclick="location.href='index reservation.html';">Reservation</button>
+          <button onclick="location.href='index aboutus.html';">About Us</button>
+          <button onclick="location.href='index contact.html';">Contact</button>
+        </ul>
+      </nav>
+</header>
+<link rel="stylesheet" href="style reservation.css" />
+<!-- Reservation Form Section -->
+<section id="reservation">
+    <h2>Book Your Table</h2>
+    <form id="reservation-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="youremail@example.com" required />
+
+      <label for="date">Reservation Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Reservation Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" required />
+
+      <label for="special-request">Special Request (Optional)</label>
+      <textarea id="special-request" name="special-request" rows="3" placeholder="Any allergies, seating preferences, etc."></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Golden Chicken Restaurant. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('reservation-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for your reservation! We will contact you shortly to confirm.');
+      document.getElementById('reservation-form').reset();
+    });
+  </script>
+</body>
+
+</html>
